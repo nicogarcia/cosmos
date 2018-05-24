@@ -19,7 +19,7 @@ import TabsExample from './examples/tabs'
 import Buttons from './examples/buttons'
 import ButtonsInputs from './examples/buttons-inputs'
 import Logos from './examples/logos'
-import Avatars from './examples/avatars'
+import { AvatarsWithImages, AvatarsWithIcons } from './examples/avatars'
 import Lists from './examples/lists'
 import ResourceLists from './examples/resource-lists'
 import Tables from './examples/tables'
@@ -52,7 +52,10 @@ export default () => (
       </Row>
       <Row>
         <Col>
-          <Avatars />
+          <AvatarsWithImages />
+        </Col>
+        <Col>
+          <AvatarsWithIcons />
         </Col>
       </Row>
       <Row>
