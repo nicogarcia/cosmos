@@ -17,6 +17,13 @@ const attachChildren = components => {
 
   children.forEach(child => {
     const parent = getParent(parents, child)
+    if (!parent) {
+      throw new Error(
+        `Error building sidebar hierarchy for ${
+          child.filepath
+        }. Is there an error in the related component?`
+      )
+    }
     parent.children.push(child)
   })
 
@@ -49,6 +56,8 @@ const getParent = (components, child) => {
     '/' +
     directoryName +
     '.js'
+
+  console.log({ components, parentFilePath })
 
   return components.filter(component => component.filepath === parentFilePath)[0]
 }
