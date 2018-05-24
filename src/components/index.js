@@ -32,7 +32,6 @@ import {
   Text,
   TextArea,
   TextInput,
-  Thumbnail,
   Tooltip
 } from './components'
 
@@ -70,6 +69,5 @@ export {
   Text,
   TextArea,
   TextInput,
-  Thumbnail,
   Tooltip
 }
